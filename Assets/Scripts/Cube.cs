@@ -11,30 +11,22 @@ public class Cube : Agent
     [SerializeField] private KeyCode rightKey;
 
     private Rigidbody rBody;
-    private Vector3 startingPosition;
+    //private Vector3 startingPosition;
     //private int score = 0;
 
     public ObstacleSpawner obstacleSpawner;
-
-    public GameObject ground;
 
     public event Action OnReset;
 
     public override void Initialize()
     {
         rBody = GetComponent<Rigidbody>();
-        startingPosition = transform.position;
+        //startingPosition = transform.position;
     }
 
     private void FixedUpdate()
     {
-
-        if (transform.position.x < ground.transform.position.y)
-        {
-            AddReward(increment: 0.1f);
-            EndEpisode();
-        }
-
+        // Ask: 'what do I do now' every frame
         RequestDecision();
     }
 
@@ -105,6 +97,7 @@ public class Cube : Agent
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Cube crashed into the block wall -- assign negative reward, end episode
         if (collision.gameObject.CompareTag("Obstacle")) 
         {
             AddReward(increment: -1.0f);
@@ -114,6 +107,7 @@ public class Cube : Agent
 
     private void OnTriggerEnter(Collider other)
     {
+        // Cube made it through the block wall -- assign reward, end episode
         if (other.gameObject.CompareTag("Score"))
         {
             AddReward(increment: 1.0f);
