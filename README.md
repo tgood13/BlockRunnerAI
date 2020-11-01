@@ -6,4 +6,4 @@
 
 ## How It Looks
 
-![Demo](https://ibb.co/dpWHrMb)
+![Demo](https://i.ibb.co/FYxdK3s/demo.gif)
