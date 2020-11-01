@@ -1,7 +1,7 @@
 # BlockRunnerAI
 
 ## Description
-A simple blockrunner game created with Unity along with an AI that has learned to play it using Reinforcement Learning
+A simple blockrunner game created with Unity along with an AI that has learned to play it using Reinforcement Learning.
 
 ## How It Works
 * Base game was created in Unity
