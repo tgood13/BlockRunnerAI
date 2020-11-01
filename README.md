@@ -8,7 +8,7 @@ A simple blockrunner game created with Unity along with an AI that has learned t
 * AI was implemented using Unity's ML-Agents Toolkit
 * AI was trained to play the game using reinforcement learning
 
-Video explaining entire process: ![](https://youtu.be/slaYeCNHT7M)
+Video explaining entire process: [![thumbnail](https://i.paste.pics/dc654e28ba07fb729d4b97a9c237cec8.png)](https://youtu.be/slaYeCNHT7M)
 
 ## How It Looks
 * After 1 hour of training, the AI learned to play the game relatively well:
