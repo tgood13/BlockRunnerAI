@@ -12,7 +12,7 @@ A simple blockrunner game created with Unity along with an AI that has learned t
 
 ### Learning
 * Agent receives +1 as reward if they make it past a set of obstacles
-* Agent receives -1 as a punishment if they collide with an obstacle
+* Agent receives -1 as punishment if they collide with an obstacle
 
 Video explaining AI implementation: [![thumbnail](https://yt-embed.herokuapp.com/embed?v=slaYeCNHT7M)](https://youtu.be/slaYeCNHT7M)
 
