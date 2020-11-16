@@ -10,6 +10,10 @@ A simple blockrunner game created with Unity along with an AI that has learned t
 * AI was implemented using Unity's ML-Agents Toolkit
 * AI was trained to play the game using reinforcement learning
 
+### Learning
+* Agent receives +1 as reward if they make it past a set of obstacles
+* Agent receives -1 as a punishment if they collide with an obstacle
+
 Video explaining AI implementation: [![thumbnail](https://yt-embed.herokuapp.com/embed?v=slaYeCNHT7M)](https://youtu.be/slaYeCNHT7M)
 
 ## How It Looks
